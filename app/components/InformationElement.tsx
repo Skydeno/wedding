@@ -1,9 +1,10 @@
 import React from "react";
-import { STATESENUM } from "../organization/page";
+
 import { IoCalendarOutline } from "react-icons/io5";
 import { HiOutlineClock } from "react-icons/hi";
 import { GiDiamondRing } from "react-icons/gi";
 import BusinessCard from "./BusinessCard";
+import { STATESENUM } from "../utils";
 
 export interface InformationElementI {
   date?: string;

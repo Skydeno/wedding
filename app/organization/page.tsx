@@ -3,14 +3,7 @@ import React, { useEffect, useState } from "react";
 import InformationElement, {
   InformationElementI,
 } from "../components/InformationElement";
-
-export enum STATESENUM {
-  Start = "start",
-  Wedding = "wedding",
-  Family = "family",
-  Friends = "friends",
-  Contact = "contact",
-}
+import { STATESENUM } from "../utils";
 
 const content = [
   {
