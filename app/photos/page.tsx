@@ -6,30 +6,42 @@ const Photos = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className={`text-3xl font-dance text-center p-6`}>
-        Zeskanuj kod aby dodać zdjęcia
+        Zdjęcia ze ślubu
       </h1>
-      <Image
-        className=""
-        src="/images/qr.png"
-        width={250}
-        height={100}
-        alt="qr-code"
-      />
-      <h1 className={`text-3xl font-dance text-center p-6`}>
-        lub skorzystaj z{" "}
-        <Link
-          href={`https://weduploader.com/upload/eZskdiROAIORnbpf`}
-          className="underline text-blue"
+      <Link
+        href={
+          "https://drive.google.com/drive/folders/1DtGwYs_H38qupQiuxT9JN58-hrwrXVb1?usp=sharing"
+        }
+      >
+        <h1
+          className={`text-3xl font-dance text-center p-6 underline text-blue`}
         >
-          tego
-        </Link>{" "}
-        linku
-      </h1>
-      <ul className="text-center mt-4">
-        <li>1. Po dodaniu nie można usunąć</li>
-        <li>2. Jeżeli dodałeś coś omyłkowo - daj nam znać a usuniemy</li>
-        <li>3. Po wszystkim udostępnimy tutaj link do zdjęć</li>
-      </ul>
+          Dysk google
+        </h1>
+      </Link>
+      <div className={"flex flex-row h-96 gap-20 mt-6"}>
+        <Image
+          className="rounded-xl shadow-lg"
+          src="/images/sesja.jpg"
+          width={250}
+          height={100}
+          alt="rodzina"
+        />
+        <Image
+          className="rounded-xl shadow-lg"
+          src="/images/urzad.jpg"
+          width={550}
+          height={100}
+          alt="rodzina"
+        />
+        <Image
+          className="rounded-xl shadow-lg"
+          src="/images/jungla.jpg"
+          width={280}
+          height={100}
+          alt="rodzina"
+        />
+      </div>
     </div>
   );
 };
