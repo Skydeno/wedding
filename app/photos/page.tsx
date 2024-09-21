@@ -19,7 +19,9 @@ const Photos = () => {
           Dysk google
         </h1>
       </Link>
-      <div className={"flex flex-row h-96 gap-20 mt-6"}>
+      <div
+        className={"flex flex-col md:flex-row h-96 gap-20 mt-6 items-center"}
+      >
         <Image
           className="rounded-xl shadow-lg"
           src="/images/sesja.jpg"
